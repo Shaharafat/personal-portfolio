@@ -105,7 +105,7 @@ const Container = (props) => {
           </li>
           <li className="mx-2">
             <button
-              className="text-md block md:inline-block px-3 py-4 md:py-2 md:rounded-lg text-darkBlue font-merriweather font-semibold"
+              className="text-md block md:inline-block focus:outline-none px-3 py-4 md:py-2 md:rounded-lg text-darkBlue font-merriweather font-semibold"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
               {theme === "dark" ? <FaSun /> : <FaMoon />}

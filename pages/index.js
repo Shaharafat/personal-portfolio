@@ -1,10 +1,9 @@
+import About from "@/components/About";
 import Container from "@/components/Container";
 import Intro from "@/components/Intro";
-import { useTheme } from "next-themes";
 import Head from "next/head";
 
 export default function Home() {
-  const { theme, setTheme } = useTheme();
   return (
     <div>
       <Head>
@@ -16,6 +15,7 @@ export default function Home() {
       <main>
         <Container>
           <Intro />
+          <About />
         </Container>
       </main>
     </div>

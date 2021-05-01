@@ -6,10 +6,10 @@
  * Date: 01-05-2021
  *
  */
+import Button from "@/common/Button";
+import ComponentLayout from "@/common/ComponentLayout";
 import React from "react";
 import { FaFileDownload } from "react-icons/fa";
-import Button from "./common/Button";
-import ComponentLayout from "./common/ComponentLayout";
 
 const Intro = () => {
   return (

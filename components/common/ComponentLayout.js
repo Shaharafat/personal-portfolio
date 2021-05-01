@@ -8,9 +8,12 @@
  */
 import React from "react";
 
-const ComponentLayout = ({ children }) => {
+const ComponentLayout = ({ children, id = "/" }) => {
   return (
-    <section className="h-min-nav content-area grid items-center bg-white dark:bg-purpleDark">
+    <section
+      id={id}
+      className="h-min-nav content-area grid items-center bg-white dark:bg-purpleDark"
+    >
       {children}
     </section>
   );
