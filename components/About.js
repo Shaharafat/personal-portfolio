@@ -40,7 +40,7 @@ const About = () => {
           {/* image */}
           <div className="order-1 lg:order-2 flex justify-center">
             <Image
-              src="/static/images/shaharafat.png"
+              src="/static/images/banner.png"
               width={300}
               height={300}
               layout="intrinsic"

@@ -23,7 +23,7 @@ const Container = (props) => {
   const meta = {
     title: "Shah Arafat | Developer, writer, nerd",
     description: "Front-end developer, Javascript enthusiast, React lover",
-    image: "https://shaharafat.info/static/images/shaharafat.png",
+    image: "https://shaharafat.info/static/images/banner.png",
     type: "website",
     ...customMeta,
   };
