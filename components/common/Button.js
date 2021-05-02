@@ -8,7 +8,7 @@
  */
 import React from "react";
 
-const Button = ({ href, colors, children, nextLink }) => {
+const Button = ({ href, colors, type, children, nextLink }) => {
   return nextLink ? (
     <NextLink href={`${href}`}>
       <a
@@ -20,6 +20,7 @@ const Button = ({ href, colors, children, nextLink }) => {
   ) : (
     <a
       href={href}
+      type={type}
       target="_blank"
       className={`px-4 py-2 mt-4 text-lg text-semibold font-openSans text-white dark:text-white flex w-max items-center ${colors} rounded-sm`}
     >

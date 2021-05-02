@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Container from "@/components/Container";
 import Intro from "@/components/Intro";
 import Projects from "@/components/Projects";
@@ -17,7 +18,8 @@ export default function Home() {
         <Container>
           <Intro />
           <About />
-          <Projects/>
+          <Projects />
+          <Contact />
         </Container>
       </main>
     </div>
