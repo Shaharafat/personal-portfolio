@@ -54,7 +54,7 @@ const Container = (props) => {
         <meta name="twitter:image" content={meta.image} />
       </Head>
       {/* navbar */}
-      <nav className="w-full h-20 bg-white dark:bg-purpleDark sticky top-0 md:static px-4 md:px-10 lg:px-16 xl:px-20 flex justify-between items-center">
+      <nav className="w-full h-20 bg-white dark:bg-purpleDark sticky top-0 z-50 shadow-md bg-opacity-95 dark:bg-opacity-95 px-4 md:px-10 lg:px-16 xl:px-20 flex justify-between items-center">
         <h1 className="font-bold text-2xl text-darkBlue font-merriweather">
           <NextLink href="/">SA.</NextLink>
         </h1>

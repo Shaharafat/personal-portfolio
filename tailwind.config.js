@@ -6,6 +6,7 @@ module.exports = {
       backgroundColor: {
         purpleDark: "#3C2F5E",
         electroMagnetic: "#2f3640",
+        purpleDarkUltra: '#2a2142',
       },
       fontFamily: {
         merriweather: ["Merriweather", "sans-serif"],

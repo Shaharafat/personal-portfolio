@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Container from "@/components/Container";
 import Intro from "@/components/Intro";
+import Projects from "@/components/Projects";
 import Head from "next/head";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <Container>
           <Intro />
           <About />
+          <Projects/>
         </Container>
       </main>
     </div>
