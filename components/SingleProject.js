@@ -31,8 +31,11 @@ const SingleProject = ({
       </p>
       {/* project tags */}
       <div className="flex mt-4 flex-wrap items-center">
-        {tags.map((tag) => (
-          <p className="font-openSans text-sm font-semibold px-2 bg-gray-200 mx-1 my-1 dark:bg-darkBlue rounded-full">
+        {tags.map((tag, index) => (
+          <p
+            key={index}
+            className="font-openSans text-sm font-semibold px-2 bg-gray-200 mx-1 my-1 dark:bg-darkBlue rounded-full"
+          >
             {tag}
           </p>
         ))}
