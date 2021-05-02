@@ -50,7 +50,6 @@ const Contact = () => {
       setLoading(false);
       setSuccess("Email sent successfully.");
     } catch (error) {
-      console.log(error.text);
       setLoading(false);
       setError("Email sent failed. Try again later!");
     }

@@ -8,7 +8,7 @@
  */
 import React from "react";
 
-const ComponentLayout = ({ children, id = "/" }) => {
+const ComponentLayout = ({ children, id = "" }) => {
   return (
     <section
       id={id}
