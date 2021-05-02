@@ -11,10 +11,41 @@
   }
 }
 
-.h-min-nav{
-  min-height: calc(100vh - 5rem)
+.h-min-nav {
+  min-height: calc(100vh - 5rem);
 }
 
-.content-area{
-  @apply px-4 md:px-20 lg:px-32 xl:px-40
+.content-area {
+  @apply px-4 md:px-20 lg:px-32 xl:px-40;
+}
+
+.wave-animation {
+  animation: wave 1s ease-in 1s 2;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center bottom;
+  }
+  20% {
+    transform: rotate(20deg);
+    transform-origin: center bottom;
+  }
+  40% {
+    transform: rotate(-20deg);
+    transform-origin: center bottom;
+  }
+  60% {
+    transform: rotate(20deg);
+    transform-origin: center bottom;
+  }
+  80% {
+    transform: rotate(-20deg);
+    transform-origin: center bottom;
+  }
+  100% {
+    transform: rotate(0deg);
+    transform-origin: center bottom;
+  }
 }

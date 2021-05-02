@@ -9,15 +9,21 @@
 import Button from "@/common/Button";
 import ComponentLayout from "@/common/ComponentLayout";
 import React from "react";
-import { FaFileDownload } from "react-icons/fa";
+import { FaFileDownload, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Intro = () => {
   return (
     <ComponentLayout>
       <div>
         <h1 className="font-merriweather font-bold text-5xl text-darkBlue leading-normal ">
-          Hey there,
-          <br />
+          <span className="flex items-center">
+            Hey there,{" "}
+            <img
+              src="/static/images/wave.png"
+              className="h-14 wave-animation"
+              alt="wave icon"
+            />
+          </span>
           I'm <span className="text-pink-600">Developer</span>, Writer,
           <br />
           nerd.
@@ -31,6 +37,26 @@ const Intro = () => {
           I write in Javascript, HTML, CSS. I am experienced in different <br />{" "}
           front end development tools and libraries.
         </p>
+        {/* find me in */}
+        <p className="font-openSans mt-4 font-semibold text-electroMagnetic dark:text-white">
+          Find me on
+        </p>
+        <div className="flex items-center mt-2">
+          <a
+            href="https://github.com/shaharafat"
+            target="_blank"
+            className="text-pink-600 mr-2 text-lg"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shah-arafat/"
+            target="_blank"
+            className="text-pink-600 mx-2 text-lg"
+          >
+            <FaLinkedinIn />
+          </a>
+        </div>
         {/* resume download button */}
         <Button
           nextLink={false}

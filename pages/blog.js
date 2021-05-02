@@ -11,11 +11,17 @@ import Container from "@/components/Container";
 import React from "react";
 
 const blog = () => {
+  const meta = {
+    title: "Blog | Shah Arafat",
+  };
+
   return (
-    <Container>
+    <Container {...meta}>
       <ComponentLayout>
         <div className="grid items-center">
-          <p className="text-center font-openSans text-3xl text-darkBlue">Coming soon...</p>
+          <p className="text-center font-openSans text-3xl text-darkBlue">
+            Coming soon...
+          </p>
         </div>
       </ComponentLayout>
     </Container>
