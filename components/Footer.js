@@ -10,13 +10,12 @@ import React from "react";
 import { FaArrowUp, FaHeart } from "react-icons/fa";
 
 const Footer = () => {
-
   // go top smoothly
   const goTop = () => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior:"smooth",
+      behavior: "smooth",
     });
   };
 
