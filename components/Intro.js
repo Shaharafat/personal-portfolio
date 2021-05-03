@@ -15,7 +15,7 @@ const Intro = () => {
   return (
     <ComponentLayout>
       <div>
-        <h1 className="font-merriweather font-bold text-2xl sm:text-3xl md:text-5xl text-darkBlue leading-normal ">
+        <h1 className="font-merriweather font-bold text-2xl md:text-5xl text-darkBlue leading-normal ">
           <span className="flex items-center">
             Hey there,{" "}
             <img
@@ -24,10 +24,9 @@ const Intro = () => {
               alt="wave icon"
             />
           </span>
-          {/* I'm <span className="text-pink-600">Developer</span>, Writer, */}
           I'm <span className="text-pink-600">Shah Arafat</span>
           <br />
-          Developer, Writer, nerd.
+          Developer, Writer, Nerd.
         </h1>
         <p className="font-openSans mt-6 font-semibold text-electroMagnetic dark:text-white">
           23 years old nerd, passionate by web development, travelling and
