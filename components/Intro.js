@@ -24,9 +24,10 @@ const Intro = () => {
               alt="wave icon"
             />
           </span>
-          I'm <span className="text-pink-600">Developer</span>, Writer,
-          <br />
-          nerd.
+          {/* I'm <span className="text-pink-600">Developer</span>, Writer, */}
+          I'm <span className="text-pink-600">Shah Arafat</span>
+          <br/>
+          Developer, Writer, nerd.
         </h1>
         <p className="font-openSans mt-6 font-semibold text-electroMagnetic dark:text-white">
           23 years old nerd, passionate by web development, travelling and

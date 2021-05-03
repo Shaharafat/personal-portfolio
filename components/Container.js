@@ -49,6 +49,8 @@ const Container = (props) => {
         left: 0,
         behavior: "smooth",
       });
+      // close mobile nav
+      setIsMobileNavActive(false)
     }
   };
 
