@@ -15,7 +15,7 @@ const Intro = () => {
   return (
     <ComponentLayout>
       <div>
-        <h1 className="font-merriweather font-bold text-5xl text-darkBlue leading-normal ">
+        <h1 className="font-merriweather font-bold text-2xl sm:text-3xl md:text-5xl text-darkBlue leading-normal ">
           <span className="flex items-center">
             Hey there,{" "}
             <img

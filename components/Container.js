@@ -12,6 +12,7 @@ import NextLink from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { FaBars, FaMoon, FaSun, FaTimes } from "react-icons/fa";
+import Footer from "./Footer";
 
 const Container = (props) => {
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
@@ -26,6 +27,29 @@ const Container = (props) => {
     image: "https://shaharafat.info/static/images/banner.png",
     type: "website",
     ...customMeta,
+  };
+
+  // goto element smoothly.
+  const gotoElement = (event) => {
+    event.preventDefault();
+
+    const hash = event.target.hash;
+    let top;
+    // if hash doesn't exist then set top to 0;
+    if (hash) {
+      const element = document.querySelector(hash);
+      top = element ? element.offsetTop - 80 : 0;
+    } else {
+      top = 0;
+    }
+
+    if (typeof window !== `undefined`) {
+      window.scrollTo({
+        top: top,
+        left: 0,
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
@@ -67,28 +91,24 @@ const Container = (props) => {
         >
           <li className="mx-2">
             <NextLink href="/">
-              <a className="text-md block md:inline-block px-3 py-4 md:py-2 md:rounded-lg text-darkBlue font-merriweather font-semibold">
+              <a
+                onClick={gotoElement}
+                className="text-md block md:inline-block px-3 py-4 md:py-2 md:rounded-lg text-darkBlue font-merriweather font-semibold"
+              >
                 Home
               </a>
             </NextLink>
           </li>
-          <li className="mx-2">
+          {/* <li className="mx-2">
             <NextLink href="/blog">
               <a className="text-md block md:inline-block px-3 py-4 md:py-2 md:rounded-lg text-darkBlue font-merriweather font-semibold">
                 Blog
               </a>
             </NextLink>
-          </li>
+          </li> */}
           <li className="mx-2">
             <a
-              href="#projects"
-              className="text-md block md:inline-block px-3 py-4 md:py-2 md:rounded-lg text-darkBlue font-merriweather font-semibold"
-            >
-              Projects
-            </a>
-          </li>
-          <li className="mx-2">
-            <a
+              onClick={gotoElement}
               href="#about"
               className="text-md block md:inline-block px-3 py-4 md:py-2 md:rounded-lg text-darkBlue font-merriweather font-semibold"
             >
@@ -97,6 +117,16 @@ const Container = (props) => {
           </li>
           <li className="mx-2">
             <a
+              onClick={gotoElement}
+              href="#projects"
+              className="text-md block md:inline-block px-3 py-4 md:py-2 md:rounded-lg text-darkBlue font-merriweather font-semibold"
+            >
+              Projects
+            </a>
+          </li>
+          <li className="mx-2">
+            <a
+              onClick={gotoElement}
               href="#contact"
               className="text-md block md:inline-block px-3 py-4 md:py-2 md:rounded-lg text-darkBlue font-merriweather font-semibold"
             >
@@ -121,9 +151,8 @@ const Container = (props) => {
           </span>
         </div>
       </nav>
-      <main>
-        {children}
-      </main>
+      <main>{children}</main>
+      <Footer />
     </div>
   );
 };
