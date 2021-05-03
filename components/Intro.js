@@ -26,7 +26,7 @@ const Intro = () => {
           </span>
           {/* I'm <span className="text-pink-600">Developer</span>, Writer, */}
           I'm <span className="text-pink-600">Shah Arafat</span>
-          <br/>
+          <br />
           Developer, Writer, nerd.
         </h1>
         <p className="font-openSans mt-6 font-semibold text-electroMagnetic dark:text-white">
