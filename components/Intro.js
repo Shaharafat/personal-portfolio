@@ -9,7 +9,7 @@
 import Button from "@/common/Button";
 import ComponentLayout from "@/common/ComponentLayout";
 import React from "react";
-import { FaFileDownload, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaDev, FaFileDownload, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Intro = () => {
   return (
@@ -55,6 +55,13 @@ const Intro = () => {
             className="text-pink-600 mx-2 text-lg"
           >
             <FaLinkedinIn />
+          </a>
+          <a
+            href="https://dev.to/shaharafat"
+            target="_blank"
+            className="text-pink-600 mx-2 text-lg"
+          >
+            <FaDev />
           </a>
         </div>
         {/* resume download button */}
