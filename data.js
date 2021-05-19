@@ -61,4 +61,31 @@ export const projectsData = [
     code: "https://github.com/Shaharafat/react-image-gallary",
     image: "/static/images/gallary.png",
   },
+  {
+    name: "Jevelin Homepage",
+    projectDetails:
+      "`A fully responsive landing page. `",
+    tags: ["HTML", "CSS", "SCSS", "BEM"],
+    live: "https://shaharafat.github.io/jevelin-homepage/",
+    code: "https://github.com/Shaharafat/jevelin-homepage",
+    image: "/static/images/jevelin.png",
+  },
+  {
+    name: "Shutterstock Landing Page",
+    projectDetails:
+      "`A fully responsive landing page. `",
+    tags: ["HTML", "CSS", "SCSS", "BEM"],
+    live: "https://boring-mayer-290397.netlify.app/",
+    code:"https://github.com/Shaharafat/shutterstock-landing-page",
+    image: "/static/images/shutterstock.png",
+  },
+  {
+    name: "Webboost Landing Page",
+    projectDetails:
+      "`A fully responsive landing page. `",
+    tags: ["HTML", "CSS", "SCSS", "BEM"],
+    live: "https://shaharafat.github.io/webboost-landing-page/",
+    code: "https://github.com/Shaharafat/webboost-landing-page",
+    image: "/static/images/webboost.png",
+  },
 ];
