@@ -29,12 +29,16 @@ const About = () => {
               . A Passionate Front-end developer from Bangladesh. My
               responsibility is to create responsive and scalable front-end
               applications using React JS. I love to explore new technologies
-              related to the web. I have a bad habit that, when I am working, if
-              I get stuck with something, I can't even sleep before solving the
-              issue. Besides all of this, I like to teach people and I have four
-              years of experience in teaching. That's why I can explain things
-              in a very comfortable way. I am available to work with you if it
-              suits my interest.
+              related to the web.
+              <br />
+              <p className="mt-4">
+                I have a bad habit that, when I am working, if I get stuck with
+                something, I can't even sleep before solving the issue. Besides
+                all of this, I like to teach people and I have four years of
+                experience in teaching. That's why I can explain things in a
+                very comfortable way. I am available to work with you if it
+                suits my interest.
+              </p>
             </p>
           </div>
           {/* image */}

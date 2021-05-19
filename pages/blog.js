@@ -4,7 +4,6 @@
  * Description: blog page
  * Author: Shah Arafat
  * Date: 02-05-2021
- *
  */
 import ComponentLayout from "@/components/common/ComponentLayout";
 import Container from "@/components/Container";
